@@ -7,10 +7,10 @@ from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI # type: ignore
 import os
 
-# Connect to MongoDB
+# Connect to MongoDB 
 MONGO_URI = "mongodb+srv://anshshr:ansh123@freelancing-platform.esbya.mongodb.net/"
 client = MongoClient(MONGO_URI)
 db = client["test"]

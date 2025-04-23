@@ -11,12 +11,12 @@ class QueryRequest(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "RAG Chatbot API is up!"}
+    return {"message": "✅ RAG Chatbot API is running!"}
 
 @app.post("/ask")
 def ask_question(query: QueryRequest):
     try:
-        result = rag_chain.invoke(query.question)
-        return {"answer": result}
+        answer = rag_chain.invoke(query.question)
+        return {"answer": answer}
     except Exception as e:
-        return {"error": str(e)}
+        return {"error": f"An error occurred: {str(e)}"}

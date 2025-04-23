@@ -1,10 +1,8 @@
 fastapi
 uvicorn
-pymongo
 langchain
-langchain-community
-langchain-core
+langchain-huggingface
 langchain-google-genai
-chromadb
-huggingface_hub
+pymongo
 sentence-transformers
+huggingface_hub[hf_xet]
