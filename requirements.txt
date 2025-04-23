@@ -1,8 +1,10 @@
 fastapi
 uvicorn
 langchain
-langchain-huggingface
+langchain-core  # Explicitly include core
+langchain-community # Explicitly include community
 langchain-google-genai
 pymongo
 sentence-transformers
-huggingface_hub[hf_xet]
+chromadb  # Ensure Chroma is included
+tiktoken  # Often needed for tokenization
